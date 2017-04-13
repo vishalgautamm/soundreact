@@ -22,12 +22,19 @@ export default class App extends Component {
       .then(({ tracks }) => this.setState({ tracks }));
   };
 
+  handleKeyPress = (e) =>{
+    var key = e.keyCode || e.which;
+    if (key == 13){
+      this.fetchSongs();
+    }
+  }
+
   render() {
     const { tracks, songPosition } = this.state;
     return (
       <div className="Application">
         <div className="searchBar">
-          <SearchBar updateText={(song) => this.setState({ song })} fetchSongs={this.fetchSongs} />
+          <SearchBar updateText={(song) => this.setState({ song })} fetchSongs={this.fetchSongs} handleKeyPress={this.handleKeyPress} />
         </div>
         <div className="content">
           {tracks.items && <SongItem songData={tracks.items[songPosition]} />}

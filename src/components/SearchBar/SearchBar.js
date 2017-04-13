@@ -3,7 +3,7 @@ import './SearchBar.css';
 
 const SearchBar = (props) => (
   <div className="SearchBar">
-    <input className="input" onChange={(evt) => props.updateText(evt.target.value)} placeholder="SEARCH" />
+    <input className="input" onChange={(evt) => props.updateText(evt.target.value)} onKeyPress={props.handleKeyPress} placeholder="SEARCH" />
     <button className="button" onClick={props.fetchSongs} > Get Songs </button>
   </div>
 );
