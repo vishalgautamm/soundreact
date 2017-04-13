@@ -2,7 +2,7 @@
 
 A clone of a popular music app - Spotify
 
-App Link : https://soundreact.herokuapp.com/
+App Link : [SoundReact](https://soundreact.herokuapp.com/)
 
 # Instructions
 
