@@ -1,0 +1,86 @@
+.SongItem {
+    display: flex;
+    justify-content: center;
+    height: 360px;
+    margin-top: 30px;
+}
+
+.SongItem-album {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3px;
+}
+
+.albumName {
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    color: #19191B;
+    font-size: 12px;
+    font-weight:inherit;
+    font-family: Open Sans, BlinkMacSystemFont, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+.songAndDescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+
+.SongItem-image {
+    height: 266px;
+    width: 300px;
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 1px #383d41;
+}
+
+.songDescription {
+    justify-content: center;
+    letter-spacing: 0.05em;
+    display: flex;
+    color: #29292E;
+    font-family: Open Sans, BlinkMacSystemFont, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 30px;
+    margin: 20px 0 0 0;
+    margin-left: 20px;
+}
+
+.songDescriptionMin {
+    justify-content: center;
+    display: flex;
+    color: #383d41;
+    font-family: Open Sans, BlinkMacSystemFont, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+audio {
+    width: 400px;
+    margin-right: 20px;
+}
+
+audio:hover, audio:focus, audio:active
+{
+    -webkit-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    -moz-box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    box-shadow: 15px 15px 20px rgba(0,0, 0, 0.4);
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+audio
+{
+    -webkit-transition:all 0.5s linear;
+    -moz-transition:all 0.5s linear;
+    -o-transition:all 0.5s linear;
+    transition:all 0.5s linear;
+    -moz-box-shadow: 2px 2px 4px 0px #006773;
+    -webkit-box-shadow:  2px 2px 4px 0px #006773;
+    box-shadow: 2px 2px 4px 0px #006773;
+    -moz-border-radius:7px 7px 7px 7px ;
+    -webkit-border-radius:7px 7px 7px 7px ;
+    border-radius:7px 7px 7px 7px ;
+    margin-left: 40px;
+}

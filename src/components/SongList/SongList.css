@@ -1,0 +1,35 @@
+.SongList-root {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    overflow: scroll;
+    margin-top: 10px;
+    background-color: #27272b;
+    box-shadow: 4px 4px 1px #d3d3d3;
+}
+
+.SongList-eachSong {
+    display: flex;
+    flex-direction: column;
+}
+
+.SongList-image:hover {
+    border: 2px solid #d3d3d3;
+}
+
+.SongList-image {
+    justify-content: center;
+    height: 120px;
+    width: 150px;
+    margin: 10px 10px;
+}
+
+.SongList-songDescription {
+    justify-content: center;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 10px;
+    margin: 10px 20px;
+    font-family: Open Sans, BlinkMacSystemFont, 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}

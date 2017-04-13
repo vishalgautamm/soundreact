@@ -1,0 +1,61 @@
+.SearchBar {
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+    color: #222;
+}
+
+.input {
+    border: 1px solid #d3d3d3;
+    background-color: white;
+    border-radius: 3px;
+    margin-right: 3px;
+    width: 350px;
+    height: 30px;
+    font-size: 15px;
+    text-align: left;
+    color: #2b1f3b;
+    font-family: Open Sans, sans-serif, monospace;
+}
+
+
+.button:hover {
+    border: 1px solid;
+}
+
+.button {
+    border: none;
+    background-color: #222;
+    border-radius: 5px;
+    border: 1px solid #4c4c59;
+    color: white;
+    height: 30px;
+    width: 120px;
+    font-size: 12px;
+    text-align: left;
+    margin-left: 5px;
+}
+
+::-webkit-input-placeholder {
+    text-align: left;
+    font-size: 12px;
+    font-family: Open Sans, sans-serif, monospace;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    text-align: left;
+    font-size: 12px;
+    font-family: Open Sans, sans-serif, monospace;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    text-align: left;
+    font-size: 12px;
+    font-family: Open Sans, sans-serif, monospace;
+}
+
+:-ms-input-placeholder {
+    text-align: left;
+    font-size: 12px;
+    font-family: Open Sans, sans-serif, monospace;
+}
