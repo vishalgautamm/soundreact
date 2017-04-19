@@ -13,7 +13,7 @@ const SongItem = (props) => {
   return (
     <div className="SongItem">
       <div className="SongItem-album">
-        <img className="SongItem-image" role="presentation" src={albumImage.url} />
+        <img className="SongItem-image" role="presentation" alt="" src={albumImage.url} />
       </div>
       <div className="songAndDescription">
         <span className="songDescription"> {songData.name} </span>

@@ -6,7 +6,7 @@ const eachSong = (props) => {
   const albumImage = album.images[0];
   return (
     <div className="SongList-eachSong">
-      <img role="presentation" src={albumImage.url} className="SongList-image" />
+      <img role="presentation" alt="" src={albumImage.url} className="SongList-image" />
       <span className="SongList-songDescription">{name}</span>
     </div>
   );

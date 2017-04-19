@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './App.css';
 import SearchBar from './components/SearchBar/SearchBar.js';
 import searchSpotify from './utils/searchSpotify.js';
@@ -17,6 +18,12 @@ export default class App extends Component {
     };
   }
 
+  componentDidMount() {
+    axios.get('https://api.spotify.com/v1/search?q=maitre&type=track')
+      .then(response => this.setState({ tracks: response.data.tracks }))
+      .catch(error => console.log('Error when fetching and parsing data', error));
+  }
+
   fetchSongs = () => {
     searchSpotify(this.state.song)
       .then(({ tracks }) => this.setState({ tracks }));
@@ -24,7 +31,7 @@ export default class App extends Component {
 
   handleKeyPress = (e) =>{
     var key = e.keyCode || e.which;
-    if (key == 13){
+    if (key === 13){
       this.fetchSongs();
     }
   }
